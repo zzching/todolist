@@ -1,0 +1,263 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+i {
+  pointer-events: none;
+}
+
+body {
+  position: relative;
+  background-size: 100%;
+  background-image: url(./pic/jeshoots-com-pUAM5hPaCRI-unsplash.jpg);
+  z-index: -10;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body div.imgfilter {
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.199);
+}
+
+header {
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header h1 {
+  letter-spacing: 0.2rem;
+}
+
+footer div.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 4rem;
+}
+
+form {
+  margin: 0% 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+form input {
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.2rem;
+  margin: 0.2rem;
+}
+
+form input[type="number"] {
+  width: 55px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+form input[type="number"] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+
+form button {
+  background-color: #dbbaba;
+  height: 32px;
+  padding: 0px 0.8rem;
+  font-size: 1.2rem;
+  margin: 0.4rem;
+  border: none;
+}
+
+form button:hover {
+  cursor: pointer;
+  background-color: #e9cbcb;
+}
+
+main div.sort {
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main div.sort button {
+  background-color: #dbbaba;
+  height: 32px;
+  padding: 0px 0.8rem;
+  border: none;
+  font-size: 1.2rem;
+}
+
+main div.sort button:hover {
+  cursor: pointer;
+  background-color: #e9cbcb;
+}
+
+main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section div.todo {
+  width: 40vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.2rem 0rem;
+}
+
+main section div.todo p {
+  background-color: white;
+  color: black;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.2rem;
+}
+
+main section div.todo p.todo-text {
+  width: 60%;
+}
+
+main section div.todo p.todo-time {
+  width: 20%;
+  text-align: center;
+}
+
+main section div.todo button {
+  padding: 0.25rem 0.5rem;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+main section div.todo button.complete {
+  background-color: #6adf6f;
+}
+
+main section div.todo button.delete {
+  background-color: #ff5656;
+}
+
+.done {
+  opacity: 0.5;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.2rem;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-size: 120vw;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 900px) and (max-width: 750px) {
+  body {
+    background-size: 200vw;
+    background-position: center right;
+  }
+}
+
+@media screen and (max-width: 900px) and (max-width: 750px) and (max-width: 550px) {
+  form input[type="text"] {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 900px) and (max-width: 750px) and (max-width: 450px) {
+  body {
+    background-size: 1250px;
+    background-position: top right;
+  }
+  form input[type="text"] {
+    width: 350px;
+  }
+}
+
+@-webkit-keyframes scaleup {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleup {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scaledown {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes scaledown {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */
