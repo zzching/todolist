@@ -96,7 +96,7 @@ main {
     flex-direction: column;
     align-items: center;
     div.todo {
-      width: 40vw;
+      width: 470px;
       display: flex;
       align-items: center;
       margin: 0.2rem 0rem;
@@ -107,7 +107,7 @@ main {
         font-size: 1.2rem;
       }
       p.todo-text {
-        width: 60%;
+        width: 90%;
       }
       p.todo-time {
         width: 20%;
@@ -140,29 +140,70 @@ main {
     background-size: 120vw;
     background-position: center;
   }
-  @media screen and (max-width: 750px) {
-    body {
-      background-size: 200vw;
-      background-position: center right;
+}
+@media screen and (max-width: 750px) {
+  body {
+    background-size: 200vw;
+    background-position: center right;
+  }
+}
+@media screen and (max-width: 550px) {
+  form {
+    input[type="text"] {
+      width: 450px;
     }
-    @media screen and (max-width: 550px) {
-      form {
-        input[type="text"] {
-          width: 400px;
+  }
+  main {
+    section {
+      div.todo {
+        width: 400px;
+        p.todo-text {
+          width: 60%;
+        }
+        p.todo-time {
+          width: 20%;
+          text-align: center;
         }
       }
     }
-    @media screen and (max-width: 450px) {
-      body {
-        background-size: 1250px;
-        background-position: top right;
-      }
-      form {
-        input[type="text"] {
-          width: 350px;
+  }
+}
+@media screen and (max-width: 450px) {
+  body {
+    background-size: 1250px;
+    background-position: top right;
+  }
+  main {
+    section {
+      div.todo {
+        width: 270px;
+        p.todo-text {
+          width: 70%;
+        }
+        p.todo-time {
+          width: 40%;
+          text-align: center;
         }
       }
     }
+  }
+
+  form {
+    input[type="text"] {
+      width: 350px;
+    }
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 1366px) {
+  body {
+    background-image: url(./pic/fa-barboza-aELhF1a684k-unsplash.jpg);
+    background-attachment: fixed;
+  }
+}
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+  body {
+    background-image: url(./pic/fa-barboza-aELhF1a684k-unsplash.jpg);
+    background-attachment: fixed;
   }
 }
 @keyframes scaleup {

@@ -147,7 +147,7 @@ main section {
 }
 
 main section div.todo {
-  width: 40vw;
+  width: 470px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,7 +165,7 @@ main section div.todo p {
 }
 
 main section div.todo p.todo-text {
-  width: 60%;
+  width: 90%;
 }
 
 main section div.todo p.todo-time {
@@ -202,26 +202,60 @@ main section div.todo button.delete {
   }
 }
 
-@media screen and (max-width: 900px) and (max-width: 750px) {
+@media screen and (max-width: 750px) {
   body {
     background-size: 200vw;
     background-position: center right;
   }
 }
 
-@media screen and (max-width: 900px) and (max-width: 750px) and (max-width: 550px) {
+@media screen and (max-width: 550px) {
   form input[type="text"] {
+    width: 450px;
+  }
+  main section div.todo {
     width: 400px;
+  }
+  main section div.todo p.todo-text {
+    width: 60%;
+  }
+  main section div.todo p.todo-time {
+    width: 20%;
+    text-align: center;
   }
 }
 
-@media screen and (max-width: 900px) and (max-width: 750px) and (max-width: 450px) {
+@media screen and (max-width: 450px) {
   body {
     background-size: 1250px;
     background-position: top right;
   }
+  main section div.todo {
+    width: 270px;
+  }
+  main section div.todo p.todo-text {
+    width: 70%;
+  }
+  main section div.todo p.todo-time {
+    width: 40%;
+    text-align: center;
+  }
   form input[type="text"] {
     width: 350px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 1366px) {
+  body {
+    background-image: url(./pic/fa-barboza-aELhF1a684k-unsplash.jpg);
+    background-attachment: fixed;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+  body {
+    background-image: url(./pic/fa-barboza-aELhF1a684k-unsplash.jpg);
+    background-attachment: fixed;
   }
 }
 

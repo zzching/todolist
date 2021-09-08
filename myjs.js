@@ -146,7 +146,6 @@ function loadData(){
         })
     }
 }
-
 function mergeTime(arr1, arr2) {
     let result = [];
     let i = 0;
