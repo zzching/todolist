@@ -8,7 +8,6 @@ add.addEventListener("click", e=>{
     let todoText=form.children[0].value;
     let todoMonth=form.children[1].value;
     let todoDate=form.children[2].value;
-
     //prevent null data
     if(todoText==="")
     {
