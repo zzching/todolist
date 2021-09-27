@@ -24,6 +24,17 @@ add.addEventListener("click", e=>{
         alert("尚未填寫完整!");
         return;
     }
+    if(Number(todoMonth)>12)
+    {
+      alert("月份填寫錯誤!");
+      return;
+    }
+    if(Number(todoDate)>31)
+    {
+      alert("日期填寫錯誤!");
+      return;
+    }
+    
     //create a todo
     let todo=document.createElement("div");
     todo.classList.add("todo");
